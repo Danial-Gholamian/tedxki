@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TEDxKI is an independently organized TEDx event at Karolinska Institutet in Solna, Stockholm.">
+  <meta name="theme-color" content="#000000">
+  <title>TEDxKI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=League+Spartan:wght@500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <svg class="sprite" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="icon-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path d="M12 1.5 14.7 9.3 22.5 12l-7.8 2.7L12 22.5l-2.7-7.8L1.5 12l7.8-2.7z"/></symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24"><path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zM16 3v4M8 3v4M4 11h16"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M9 11a3 3 0 1 0 6 0 3 3 0 0 0-6 0"/><path d="m17.657 16.657-4.243 4.243a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"/></symbol>
+    <symbol id="icon-bulb" viewBox="0 0 24 24"><path d="M3 12h1m8-9v1m8 8h1M5.6 5.6l.7.7m12.1-.7-.7.7"/><path d="M9 16a5 5 0 1 1 6 0 3.5 3.5 0 0 0-1 3 2 2 0 0 1-4 0 3.5 3.5 0 0 0-1-3M9.7 17h4.6"/></symbol>
+    <symbol id="icon-ticket" viewBox="0 0 24 24"><path d="M15 5v2M15 11v2M15 17v2M5 5h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3a2 2 0 0 0 0-4V7a2 2 0 0 1 2-2"/></symbol>
+    <symbol id="icon-mic" viewBox="0 0 24 24"><path d="M9 5a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0zM5 10a7 7 0 0 0 14 0M8 21h8M12 17v4"/></symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24"><path d="M5 7a4 4 0 1 0 8 0 4 4 0 1 0-8 0M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2M16 3.13a4 4 0 0 1 0 7.75M21 21v-2a4 4 0 0 0-3-3.85"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></symbol>
+    <symbol id="icon-pause" viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></symbol>
+    <symbol id="icon-copy" viewBox="0 0 24 24"><path d="M8 10a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2z"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24"><path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><circle cx="12" cy="12" r="3"/><path d="M16.5 7.5v.01"/></symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M8 11v5M8 8v.01M12 16v-5M16 16v-3a2 2 0 1 0-4 0"/><path d="M3 7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"/></symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M7 10v4h3v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2H7z"/></symbol>
+    <symbol id="icon-youtube" viewBox="0 0 24 24"><path d="M2 8a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="m10 9 5 3-5 3z"/></symbol>
+    <symbol id="icon-tiktok" viewBox="0 0 24 24"><path d="M21 7.917v4.034a9.948 9.948 0 0 1-5-1.951v4.5a6.5 6.5 0 1 1-8-6.326v4.326a2.5 2.5 0 1 0 4 2V3h4.083A6.005 6.005 0 0 0 21 7.917z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header" data-header>
+    <div class="container header__inner">
+      <a class="logo" href="#home" aria-label="TEDxKI home">
+        <span class="logo__tedx">TEDx</span><span class="logo__name">KI</span>
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Main navigation" data-nav>
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#event">Event</a></li>
+          <li><a class="nav__link" href="#team">Team</a></li>
+          <li><a class="nav__link" href="#sponsors">Sponsors</a></li>
+          <li><a class="nav__link" href="#watch">Watch</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta" href="#event">Get tickets</a>
+      </nav>
+
+      <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav" data-burger>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================== HOME ============================== -->
+    <section class="page" id="page-home" data-page="home" data-page-title="TEDxKI">
+      <div class="hero">
+        <div class="container hero__stage">
+          <div class="sticker" aria-hidden="true">
+            <svg viewBox="0 0 200 200">
+              <defs><path id="sticker-ring" d="M100 100m-72 0a72 72 0 1 1 144 0a72 72 0 1 1-144 0"/></defs>
+              <circle class="sticker__disc" cx="100" cy="100" r="96"/>
+              <g class="sticker__ring">
+                <text class="sticker__text"><textPath href="#sticker-ring" textLength="448" lengthAdjust="spacing">KAROLINSKA INSTITUTET · SOLNA · STOCKHOLM ·</textPath></text>
+              </g>
+              <path class="sticker__star" d="M100 54 111 89 146 100 111 111 100 146 89 111 54 100 89 89Z"/>
+            </svg>
+          </div>
+          <div class="hero__frame">
+            <!-- Our hero photo. If the file is missing, a halftone stage drawing is shown instead. -->
+            <img class="hero__image" src="images/hero.jpg" alt="" data-hero-image>
+          </div>
+          <div class="hero__card">
+            <p class="eyebrow">Karolinska Institutet · Stockholm</p>
+            <h1 class="hero__title" tabindex="-1">Where science meets the <span class="text-red">stage</span></h1>
+            <p class="hero__text">TEDxKI brings researchers, clinicians, students and storytellers from the Karolinska Institutet community to one stage, for short talks that start long conversations.</p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#event">
+                Next event
+                <svg class="icon"><use href="#icon-arrow"></use></svg>
+              </a>
+              <a class="btn btn--ghost" href="#watch">Watch talks</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee__track">
+            <span class="marquee__group">
+              <span>Ideas from Karolinska Institutet</span><svg class="marquee__star"><use href="#icon-star"></use></svg>
+              <span>Talks</span><svg class="marquee__star"><use href="#icon-star"></use></svg>
+              <span>Performances</span><svg class="marquee__star"><use href="#icon-star"></use></svg>
+              <span>Conversations</span><svg class="marquee__star"><use href="#icon-star"></use></svg>
+              <span>Solna, Stockholm</span><svg class="marquee__star"><use href="#icon-star"></use></svg>
+            </span>
+            <span class="marquee__group">
+              <span>Ideas from Karolinska Institutet</span><svg class="marquee__star"><use href="#icon-star"></use></svg>
+              <span>Talks</span><svg class="marquee__star"><use href="#icon-star"></use></svg>
+              <span>Performances</span><svg class="marquee__star"><use href="#icon-star"></use></svg>
+              <span>Conversations</span><svg class="marquee__star"><use href="#icon-star"></use></svg>
+              <span>Solna, Stockholm</span><svg class="marquee__star"><use href="#icon-star"></use></svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- Photo strip. We can pick the photos in STRIP_IMAGES at the top of script.js. -->
+        <div class="dock-band" data-dock>
+          <div class="container">
+            <h2 class="dock-band__title">Moments</h2>
+          </div>
+          <div class="dock" data-dock-stage aria-hidden="true"></div>
+          <div class="container helix-band__bar">
+            <a class="helix-band__link" href="#watch">
+              Watch the talks
+              <svg class="icon"><use href="#icon-arrow"></use></svg>
+            </a>
+            <button class="helix-band__toggle" type="button" data-dock-toggle aria-pressed="false">
+              <svg class="icon" data-icon-pause><use href="#icon-pause"></use></svg>
+              <svg class="icon" data-icon-play hidden><use href="#icon-play"></use></svg>
+              <span>Pause animation</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photo slider. We put our photos in images/ and keep the file names, or change the src paths.
+           Missing photos fall back to a halftone stage drawing. -->
+      <div class="banner-band">
+      <section class="banner" aria-roledescription="carousel" aria-label="Highlights" data-banner>
+        <div class="banner__slides" aria-live="off">
+          <article class="banner__slide is-active" aria-roledescription="slide" aria-label="1 of 3">
+            <img class="banner__image" src="images/banner-1.jpg" alt="">
+            <div class="container banner__content">
+              <p class="eyebrow">TEDxKI 2026</p>
+              <h2 class="banner__title">Ideas worth spreading</h2>
+              <p class="banner__text">A day of short, powerful talks from researchers, students and clinicians who are changing how we think about health.</p>
+            </div>
+          </article>
+          <article class="banner__slide" aria-roledescription="slide" aria-label="2 of 3">
+            <img class="banner__image" src="images/banner-2.jpg" alt="">
+            <div class="container banner__content">
+              <p class="eyebrow">On stage</p>
+              <h2 class="banner__title">Talks that start conversations</h2>
+              <p class="banner__text">Each speaker shares one idea in 18 minutes or less, then the conversation moves to the foyer.</p>
+            </div>
+          </article>
+          <article class="banner__slide" aria-roledescription="slide" aria-label="3 of 3">
+            <img class="banner__image" src="images/banner-3.jpg" alt="">
+            <div class="container banner__content">
+              <p class="eyebrow">Watch</p>
+              <h2 class="banner__title">Every talk, online</h2>
+              <p class="banner__text">Talks are filmed and shared on the TEDx Talks YouTube channel, so ideas from Solna reach the world.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="container banner__controls">
+          <div class="banner__dots" role="group" aria-label="Choose a slide">
+            <button class="banner__dot" type="button" aria-label="Show slide 1" aria-current="true"><span></span></button>
+            <button class="banner__dot" type="button" aria-label="Show slide 2"><span></span></button>
+            <button class="banner__dot" type="button" aria-label="Show slide 3"><span></span></button>
+          </div>
+          <button class="banner__toggle" type="button" aria-pressed="false" aria-label="Pause slideshow" data-banner-toggle>
+            <svg class="icon" data-icon-pause><use href="#icon-pause"></use></svg>
+            <svg class="icon" data-icon-play hidden><use href="#icon-play"></use></svg>
+          </button>
+        </div>
+      </section>
+      </div>
+
+      <section class="section">
+        <div class="container">
+          <div class="next-event">
+            <div class="next-event__intro">
+              <p class="eyebrow">Next event</p>
+              <h2 class="section__title">Save the date</h2>
+              <p class="section__text">Theme, speakers and tickets are announced here first.</p>
+            </div>
+            <dl class="facts">
+              <div class="fact">
+                <dt><svg class="icon"><use href="#icon-calendar"></use></svg>Date</dt>
+                <dd>To be announced</dd>
+              </div>
+              <div class="fact">
+                <dt><svg class="icon"><use href="#icon-pin"></use></svg>Venue</dt>
+                <dd>To be announced</dd>
+              </div>
+              <div class="fact">
+                <dt><svg class="icon"><use href="#icon-bulb"></use></svg>Theme</dt>
+                <dd>To be announced</dd>
+              </div>
+            </dl>
+            <a class="btn next-event__cta" href="#event">Event details <svg class="icon"><use href="#icon-arrow"></use></svg></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section numbers-band" aria-labelledby="numbers-title">
+        <div class="container">
+          <div class="section__header">
+            <p class="eyebrow">In numbers</p>
+            <h2 class="section__title" id="numbers-title">Small stage, big reach</h2>
+            <p class="section__text">What our community has built together so far.</p>
+          </div>
+          <!-- Edit the numbers here. data-count is the number to count up to, data-suffix is added after it. -->
+          <ul class="numbers">
+            <li class="number"><div><span class="number__value" data-count="8">8</span><span class="number__label">Editions</span></div></li>
+            <li class="number"><div><span class="number__value" data-count="64">64</span><span class="number__label">Speakers</span></div></li>
+            <li class="number"><div><span class="number__value" data-count="3500" data-suffix="+">3,500+</span><span class="number__label">Attendees</span></div></li>
+            <li class="number"><div><span class="number__value" data-count="120">120</span><span class="number__label">Volunteers</span></div></li>
+            <li class="number"><div><span class="number__value" data-count="25">25</span><span class="number__label">Partners</span></div></li>
+            <li class="number"><div><span class="number__value" data-count="900" data-suffix="k">900k</span><span class="number__label">Online views</span></div></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section stories-band" aria-labelledby="stories-title">
+        <div class="container stories">
+          <h2 class="section__title stories__heading" id="stories-title">From the stage</h2>
+
+          <!-- Swap the photos and text for our own talks. Missing photos show a halftone drawing. -->
+          <article class="story story--a">
+            <div class="story__media">
+              <img class="story__image" src="images/story-1.jpg" alt="" data-fallback="stage" data-fallback-index="1">
+            </div>
+            <div class="story__body">
+              <p class="story__kicker">talk · year</p>
+              <h3 class="story__title">Talk title</h3>
+              <ul class="story__tags">
+                <li>medicine</li>
+                <li>research</li>
+                <li>storytelling</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="story story--b">
+            <div class="story__media">
+              <img class="story__image" src="images/story-2.jpg" alt="" data-fallback="stage" data-fallback-index="3">
+            </div>
+            <div class="story__body">
+              <p class="story__kicker">performance · year</p>
+              <h3 class="story__title">Performance title</h3>
+              <ul class="story__tags">
+                <li>music</li>
+                <li>live on stage</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="story story--wide">
+            <div class="story__media">
+              <img class="story__image" src="images/story-3.jpg" alt="" data-fallback="portrait" data-fallback-index="2">
+            </div>
+            <div class="story__body story__body--text">
+              <p>Our 2024 event, Lights Out: What Happens Now, explored how we navigate uncertainty when familiar things fade, through personal journeys, societal change and scientific innovation.</p>
+              <a class="story__link" href="#about">read about</a>
+            </div>
+          </article>
+
+          <div class="stories__more">
+            <a class="btn" href="#watch">
+              More
+              <svg class="icon"><use href="#icon-arrow"></use></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <div class="container split">
+          <div class="split__head">
+            <p class="eyebrow">What is TEDx?</p>
+            <h2 class="section__title">x = independently organized TED event</h2>
+          </div>
+          <div class="prose">
+            <p>In the spirit of discovering and spreading ideas, TED has created a program called <a href="https://www.ted.com/tedx" target="_blank" rel="noopener">TEDx</a>. TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TEDxKI, where x = independently organized TED event. At our TEDxKI event, TED Talks video and live speakers will combine to spark deep discussion and connection in a small group. Speakers never pay to join a TEDx event. Consideration, speaker coaching and event participation along with attendance are all provided free of charge. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Get involved">
+        <div class="container involve">
+          <div class="involve__media">
+            <!-- Optional photo. If the file is missing, a halftone stage drawing is shown instead. -->
+            <img class="involve__image" src="images/involve.jpg" alt="" data-fallback="stage" data-fallback-index="4">
+          </div>
+          <ul class="involve__list">
+            <li>
+              <a class="involve__row" href="#event">
+                <span class="involve__text"><span class="involve__label">Attend the next event</span><span class="involve__desc">An afternoon of talks, performances and conversations.</span></span>
+                <svg class="icon"><use href="#icon-arrow"></use></svg>
+              </a>
+            </li>
+            <li>
+              <a class="involve__row" href="#contact">
+                <span class="involve__text"><span class="involve__label">Suggest a speaker</span><span class="involve__desc">Yourself or someone you know. We coach every speaker.</span></span>
+                <svg class="icon"><use href="#icon-arrow"></use></svg>
+              </a>
+            </li>
+            <li>
+              <a class="involve__row" href="#team">
+                <span class="involve__text"><span class="involve__label">Volunteer with the team</span><span class="involve__desc">Production, design, filming or hosting on the day.</span></span>
+                <svg class="icon"><use href="#icon-arrow"></use></svg>
+              </a>
+            </li>
+            <li>
+              <a class="involve__row" href="#watch">
+                <span class="involve__text"><span class="involve__label">Watch past talks</span><span class="involve__desc">Every talk is published on the TEDx YouTube channel.</span></span>
+                <svg class="icon"><use href="#icon-arrow"></use></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+    <!-- ============================== ABOUT ============================== -->
+    <section class="page" id="page-about" data-page="about" data-page-title="About · TEDxKI" hidden>
+      <header class="page-hero">
+        <div class="container page-hero__inner">
+          <p class="eyebrow">About</p>
+          <h1 class="page-hero__title" tabindex="-1">About TEDxKI</h1>
+          <p class="page-hero__text">An independently organized TEDx event at Karolinska Institutet in Solna, Stockholm.</p>
+        </div>
+      </header>
+
+      <section class="section section--tight">
+        <div class="container split">
+          <div class="split__head">
+            <h2 class="section__title">Our story</h2>
+          </div>
+          <div class="prose">
+            <p>TEDxKI gives the Karolinska Institutet community a stage for ideas from medicine, research and everyday life. Each event pairs live talks with performances and time to meet the people behind the ideas.</p>
+            <p>Our team plans every part of the event, from finding and coaching speakers to filming the talks for the TEDx YouTube channel.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <div class="container">
+          <div class="section__header section__header--left">
+            <p class="eyebrow">Past events</p>
+            <h2 class="section__title">Where we have been</h2>
+          </div>
+          <ol class="timeline">
+            <li class="timeline__item">
+              <span class="timeline__year">2024</span>
+              <div class="timeline__body">
+                <h3 class="timeline__title">Lights Out: What Happens Now</h3>
+                <p class="timeline__meta">Aula Medica, Solna</p>
+                <p class="timeline__text">How we navigate uncertainty when familiar things fade, through personal journeys, societal change and scientific innovation.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <div class="split__head">
+            <h2 class="section__title">About TEDx, x = independently organized event</h2>
+          </div>
+          <div class="prose">
+            <p>In the spirit of discovering and spreading ideas, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <div class="container split">
+          <div class="split__head">
+            <h2 class="section__title">About TED</h2>
+          </div>
+          <div class="prose">
+            <p>TED is a nonprofit, nonpartisan organization dedicated to discovering, debating and spreading ideas that spark conversation, deepen understanding and drive meaningful change. Our organization is devoted to curiosity, reason, wonder and the pursuit of knowledge — without an agenda. We welcome people from every discipline and culture who seek a deeper understanding of the world and connection with others, and we invite everyone to engage with ideas and activate them in your community.</p>
+            <p>TED began in 1984 as a conference where Technology, Entertainment and Design converged, but today it spans a multitude of worldwide communities and initiatives exploring everything from science and business to education, arts and global issues. In addition to the TED Talks curated from our annual conferences and published on TED.com, we produce <a href="https://audiocollective.ted.com/" target="_blank" rel="noopener">original podcasts</a>, <a href="https://www.ted.com/series" target="_blank" rel="noopener">short video series</a>, <a href="https://ed.ted.com/" target="_blank" rel="noopener">animated educational lessons (TED-Ed)</a> and TV programs that are translated into more than 100 languages and distributed via partnerships around the world. Each year, thousands of independently run <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" rel="noopener">TEDx events</a>. Through the <a href="https://www.audaciousproject.org/" target="_blank" rel="noopener">Audacious Project</a>, TED has helped catalyze $6.6 billion in funding for projects that support bold solutions to the world's most urgent challenges — working to make the world more beautiful, sustainable and just. In 2020, TED launched <a href="https://countdown.ted.com/" target="_blank" rel="noopener">Countdown</a>, an initiative to accelerate solutions to the climate crisis and mobilize a movement for a net-zero future, and in 2023 TED launched <a href="https://www.ted.com/about/programs-initiatives/teddemocracy" target="_blank" rel="noopener">TED Democracy</a> to spark a new kind of conversation focused on realistic pathways towards a more vibrant and equitable future. View a full list of <a href="https://www.ted.com/about/programs-initiatives" target="_blank" rel="noopener">TED's many programs and initiatives</a>.</p>
+            <p>Follow TED on <a href="http://www.facebook.com/TED" target="_blank" rel="noopener">Facebook</a>, <a href="https://instagram.com/ted" target="_blank" rel="noopener">Instagram</a>, <a href="https://www.linkedin.com/company/ted-conferences" target="_blank" rel="noopener">LinkedIn</a>, <a href="https://www.tiktok.com/@tedtoks?lang=en" target="_blank" rel="noopener">TikTok</a>, and <a href="http://twitter.com/TEDTalks" target="_blank" rel="noopener">X</a>.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ============================== EVENT ============================== -->
+    <section class="page" id="page-event" data-page="event" data-page-title="Event · TEDxKI" hidden>
+      <header class="page-hero">
+        <div class="container page-hero__inner">
+          <p class="eyebrow">Event</p>
+          <h1 class="page-hero__title" tabindex="-1">Our next event</h1>
+          <p class="page-hero__text">We are putting the next TEDxKI together now. Dates, theme and speakers will be announced here first.</p>
+        </div>
+      </header>
+
+      <section class="section section--tight">
+        <div class="container">
+          <dl class="facts facts--grid">
+            <div class="fact">
+              <dt><svg class="icon"><use href="#icon-calendar"></use></svg>Date</dt>
+              <dd>To be announced</dd>
+            </div>
+            <div class="fact">
+              <dt><svg class="icon"><use href="#icon-pin"></use></svg>Venue</dt>
+              <dd>To be announced</dd>
+            </div>
+            <div class="fact">
+              <dt><svg class="icon"><use href="#icon-bulb"></use></svg>Theme</dt>
+              <dd>To be announced</dd>
+            </div>
+            <div class="fact">
+              <dt><svg class="icon"><use href="#icon-ticket"></use></svg>Tickets</dt>
+              <dd>On sale soon</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <div class="container">
+          <div class="section__header section__header--left">
+            <p class="eyebrow">Speakers</p>
+            <h2 class="section__title">Who is on stage</h2>
+            <p class="section__text">Speakers are added to this list as they are confirmed.</p>
+          </div>
+          <div class="people" data-speaker-grid></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <div class="split__head">
+            <p class="eyebrow">Programme</p>
+            <h2 class="section__title">How the day runs</h2>
+            <p class="section__text">Times are published with the tickets.</p>
+          </div>
+          <ol class="schedule">
+            <li class="schedule__item"><span class="schedule__time">TBA</span><span class="schedule__what">Doors open and registration</span></li>
+            <li class="schedule__item"><span class="schedule__time">TBA</span><span class="schedule__what">Session one: talks and a performance</span></li>
+            <li class="schedule__item"><span class="schedule__time">TBA</span><span class="schedule__what">Break and mingle</span></li>
+            <li class="schedule__item"><span class="schedule__time">TBA</span><span class="schedule__what">Session two: talks and a performance</span></li>
+            <li class="schedule__item"><span class="schedule__time">TBA</span><span class="schedule__what">Closing and reception</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section--flush">
+        <div class="container">
+          <div class="cta">
+            <h2 class="section__title">Want to know when tickets drop?</h2>
+            <p class="section__text">Follow us on social media or send us a message and we will let you know.</p>
+            <a class="btn btn--primary cta__button" href="#contact">
+              Contact us
+              <svg class="icon"><use href="#icon-arrow"></use></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ============================== TEAM ============================== -->
+    <section class="page" id="page-team" data-page="team" data-page-title="Team · TEDxKI" hidden>
+      <header class="page-hero">
+        <div class="container page-hero__inner">
+          <p class="eyebrow">Team</p>
+          <h1 class="page-hero__title" tabindex="-1">The people behind TEDxKI</h1>
+          <p class="page-hero__text">The team that finds the speakers, builds the stage and films the talks.</p>
+        </div>
+      </header>
+
+      <section class="section section--tight">
+        <div class="container">
+          <!-- Add a photo with data-photo="images/team/name.jpg". Without one, a halftone placeholder is drawn. -->
+          <div class="people">
+            <article class="person"><canvas class="person__photo" data-portrait="0" data-photo=""></canvas><h3 class="person__name">Name Surname</h3><p class="person__role">Organizer and licensee</p></article>
+            <article class="person"><canvas class="person__photo" data-portrait="1" data-photo=""></canvas><h3 class="person__name">Name Surname</h3><p class="person__role">Co-organizer</p></article>
+            <article class="person"><canvas class="person__photo" data-portrait="2" data-photo=""></canvas><h3 class="person__name">Name Surname</h3><p class="person__role">Curation lead</p></article>
+            <article class="person"><canvas class="person__photo" data-portrait="3" data-photo=""></canvas><h3 class="person__name">Name Surname</h3><p class="person__role">Speaker coaching</p></article>
+            <article class="person"><canvas class="person__photo" data-portrait="4" data-photo=""></canvas><h3 class="person__name">Name Surname</h3><p class="person__role">Partnerships and sponsorship</p></article>
+            <article class="person"><canvas class="person__photo" data-portrait="5" data-photo=""></canvas><h3 class="person__name">Name Surname</h3><p class="person__role">Marketing and communications</p></article>
+            <article class="person"><canvas class="person__photo" data-portrait="6" data-photo=""></canvas><h3 class="person__name">Name Surname</h3><p class="person__role">Design</p></article>
+            <article class="person"><canvas class="person__photo" data-portrait="7" data-photo=""></canvas><h3 class="person__name">Name Surname</h3><p class="person__role">Website</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--flush">
+        <div class="container">
+          <div class="cta">
+            <h2 class="section__title">Want to join the team?</h2>
+            <p class="section__text">We look for volunteers in production, design, filming and communications before every event.</p>
+            <a class="btn btn--primary cta__button" href="#contact">
+              Get in touch
+              <svg class="icon"><use href="#icon-arrow"></use></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ============================== SPONSORS ============================== -->
+    <section class="page" id="page-sponsors" data-page="sponsors" data-page-title="Sponsors · TEDxKI" hidden>
+      <div class="hero hero--compact">
+        <div class="container hero__content">
+          <p class="eyebrow">Sponsors</p>
+          <h1 class="hero__title hero__title--wide" tabindex="-1">
+            <span class="logo-inline" data-logo-ref><span class="logo__tedx">TEDx</span><span class="logo__name">KI</span></span>
+            is made possible by our sponsors
+          </h1>
+        </div>
+
+        <div class="helix-band">
+          <canvas class="helix" data-helix="sponsors" data-max-width-ref="[data-logo-ref]" aria-hidden="true"></canvas>
+          <div class="container helix-band__bar">
+            <span class="helix-band__note">Logos twist past one by one</span>
+            <button class="helix-band__toggle" type="button" data-helix-toggle aria-pressed="false">
+              <svg class="icon" data-icon-pause><use href="#icon-pause"></use></svg>
+              <svg class="icon" data-icon-play hidden><use href="#icon-play"></use></svg>
+              <span>Pause animation</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="container">
+          <div class="section__header">
+            <p class="eyebrow">Thank you</p>
+            <h2 class="section__title">Our sponsors and partners</h2>
+          </div>
+          <ul class="logo-grid" data-sponsor-grid></ul>
+        </div>
+      </section>
+
+      <section class="section section--flush">
+        <div class="container">
+          <div class="cta">
+            <h2 class="section__title">Become a sponsor</h2>
+            <p class="section__text">Support a stage for new ideas at Karolinska Institutet. We would love to tell you more.</p>
+            <a class="btn btn--primary cta__button" href="#contact">
+              Contact partnerships
+              <svg class="icon"><use href="#icon-arrow"></use></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ============================== WATCH ============================== -->
+    <section class="page" id="page-watch" data-page="watch" data-page-title="Watch · TEDxKI" hidden>
+      <header class="page-hero">
+        <div class="container page-hero__inner">
+          <p class="eyebrow">Watch</p>
+          <h1 class="page-hero__title" tabindex="-1">Watch the talks</h1>
+          <p class="page-hero__text">Every TEDxKI talk is published on the TEDx Talks YouTube channel.</p>
+        </div>
+      </header>
+
+      <section class="section section--tight">
+        <div class="container">
+          <!-- Put the YouTube video ID in data-video (the part after watch?v= in the link). -->
+          <div class="talks">
+            <article class="talk" data-video="">
+              <div class="talk__media"><canvas class="talk__thumb" data-thumb="0"></canvas><span class="talk__play"><svg class="icon"><use href="#icon-play"></use></svg></span></div>
+              <h3 class="talk__title">Talk title</h3>
+              <p class="talk__meta">Speaker name · Year</p>
+            </article>
+            <article class="talk" data-video="">
+              <div class="talk__media"><canvas class="talk__thumb" data-thumb="1"></canvas><span class="talk__play"><svg class="icon"><use href="#icon-play"></use></svg></span></div>
+              <h3 class="talk__title">Talk title</h3>
+              <p class="talk__meta">Speaker name · Year</p>
+            </article>
+            <article class="talk" data-video="">
+              <div class="talk__media"><canvas class="talk__thumb" data-thumb="2"></canvas><span class="talk__play"><svg class="icon"><use href="#icon-play"></use></svg></span></div>
+              <h3 class="talk__title">Talk title</h3>
+              <p class="talk__meta">Speaker name · Year</p>
+            </article>
+            <article class="talk" data-video="">
+              <div class="talk__media"><canvas class="talk__thumb" data-thumb="3"></canvas><span class="talk__play"><svg class="icon"><use href="#icon-play"></use></svg></span></div>
+              <h3 class="talk__title">Talk title</h3>
+              <p class="talk__meta">Speaker name · Year</p>
+            </article>
+            <article class="talk" data-video="">
+              <div class="talk__media"><canvas class="talk__thumb" data-thumb="4"></canvas><span class="talk__play"><svg class="icon"><use href="#icon-play"></use></svg></span></div>
+              <h3 class="talk__title">Talk title</h3>
+              <p class="talk__meta">Speaker name · Year</p>
+            </article>
+            <article class="talk" data-video="">
+              <div class="talk__media"><canvas class="talk__thumb" data-thumb="5"></canvas><span class="talk__play"><svg class="icon"><use href="#icon-play"></use></svg></span></div>
+              <h3 class="talk__title">Talk title</h3>
+              <p class="talk__meta">Speaker name · Year</p>
+            </article>
+          </div>
+
+          <div class="center-row">
+            <a class="btn btn--ghost" href="https://www.youtube.com/results?search_query=TEDxKI" target="_blank" rel="noopener">
+              Find all TEDxKI talks on YouTube
+              <svg class="icon"><use href="#icon-arrow"></use></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ============================== CONTACT ============================== -->
+    <section class="page" id="page-contact" data-page="contact" data-page-title="Contact · TEDxKI" hidden>
+      <header class="page-hero">
+        <div class="container page-hero__inner">
+          <p class="eyebrow">Contact</p>
+          <h1 class="page-hero__title" tabindex="-1">Get in touch</h1>
+          <p class="page-hero__text">Questions about tickets, speaking, sponsorship or volunteering? Write to us.</p>
+        </div>
+      </header>
+
+      <section class="section section--tight">
+        <div class="container">
+          <div class="contact-card">
+            <form class="form" data-contact-form novalidate>
+              <div class="form__head">
+                <h2 class="form__title">Got an idea for the stage?</h2>
+                <p class="form__lead">Let's talk.</p>
+              </div>
+              <div class="form__row">
+                <div class="field">
+                  <label class="field__label" for="contact-name">Name</label>
+                  <input class="field__input" id="contact-name" name="name" type="text" autocomplete="name" required>
+                </div>
+                <div class="field">
+                  <label class="field__label" for="contact-email">Your email</label>
+                  <input class="field__input" id="contact-email" name="email" type="email" autocomplete="email" required>
+                </div>
+              </div>
+              <div class="field">
+                <label class="field__label" for="contact-topic">Topic</label>
+                <select class="field__input" id="contact-topic" name="topic">
+                  <option>Tickets</option>
+                  <option>Speaking</option>
+                  <option>Sponsorship</option>
+                  <option>Volunteering</option>
+                  <option>Press</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="field">
+                <label class="field__label" for="contact-message">Message</label>
+                <textarea class="field__input field__input--area" id="contact-message" name="message" rows="6" required></textarea>
+              </div>
+              <p class="form__error" data-form-error hidden></p>
+              <p class="form__status" data-form-status hidden></p>
+              <button class="btn btn--primary form__submit" type="submit">
+                Write email
+                <svg class="icon"><use href="#icon-arrow"></use></svg>
+              </button>
+              <p class="form__note">This opens your email app with the message ready to send.</p>
+            </form>
+            <div class="contact-card__media">
+              <!-- Optional photo. If the file is missing, a halftone portrait is drawn instead. -->
+              <img class="contact-card__image" src="images/contact.jpg" alt="" data-fallback="portrait" data-fallback-index="5">
+            </div>
+          </div>
+
+          <div class="info-strip">
+            <div class="info-strip__cell">
+              <h2 class="contact__label">Email</h2>
+              <div class="copy-row">
+                <span class="contact__value" data-email>hello@tedxki.com</span>
+                <button class="copy-btn" type="button" data-copy-email>
+                  <svg class="icon"><use href="#icon-copy"></use></svg>
+                  <span>Copy</span>
+                </button>
+              </div>
+            </div>
+            <div class="info-strip__cell">
+              <h2 class="contact__label">Where we are</h2>
+              <p class="contact__value">Karolinska Institutet<br>Solna, Stockholm</p>
+            </div>
+            <div class="info-strip__cell">
+              <h2 class="contact__label">Follow us</h2>
+              <ul class="social social--dark">
+                <li><a class="social__link" href="#" aria-label="Instagram"><svg class="icon"><use href="#icon-instagram"></use></svg></a></li>
+                <li><a class="social__link" href="#" aria-label="LinkedIn"><svg class="icon"><use href="#icon-linkedin"></use></svg></a></li>
+                <li><a class="social__link" href="#" aria-label="Facebook"><svg class="icon"><use href="#icon-facebook"></use></svg></a></li>
+                <li><a class="social__link" href="#" aria-label="YouTube"><svg class="icon"><use href="#icon-youtube"></use></svg></a></li>
+                <li><a class="social__link" href="#" aria-label="TikTok"><svg class="icon"><use href="#icon-tiktok"></use></svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__bar">
+      <div class="container footer__bar-inner">
+        <a class="logo logo--light footer__logo" href="#home" aria-label="TEDxKI home">
+          <span class="logo__tedx">TEDx</span><span class="logo__name">KI</span>
+        </a>
+        <!-- We replace each "#" with our real profile link. -->
+        <ul class="footer__social">
+          <li><a href="#"><svg class="icon"><use href="#icon-instagram"></use></svg><span>Instagram</span></a></li>
+          <li><a href="#"><svg class="icon"><use href="#icon-linkedin"></use></svg><span>LinkedIn</span></a></li>
+          <li><a href="#"><svg class="icon"><use href="#icon-facebook"></use></svg><span>Facebook</span></a></li>
+          <li><a href="#"><svg class="icon"><use href="#icon-youtube"></use></svg><span>YouTube</span></a></li>
+          <li><a href="#"><svg class="icon"><use href="#icon-tiktok"></use></svg><span>TikTok</span></a></li>
+        </ul>
+        <button class="footer__top" type="button" aria-label="Back to top" data-back-to-top>
+          <svg class="icon"><use href="#icon-arrow-up"></use></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <p class="footer__text">An independently organized TEDx event at Karolinska Institutet, Stockholm.</p>
+      </div>
+
+      <nav class="footer__column" aria-label="Pages">
+        <h3 class="footer__title">TEDxKI</h3>
+        <ul class="footer__list">
+          <li><a class="footer__link" href="#about">About</a></li>
+          <li><a class="footer__link" href="#event">Event</a></li>
+          <li><a class="footer__link" href="#team">Team</a></li>
+          <li><a class="footer__link" href="#sponsors">Sponsors</a></li>
+          <li><a class="footer__link" href="#watch">Watch</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__column" aria-label="Get involved">
+        <h3 class="footer__title">Get involved</h3>
+        <ul class="footer__list">
+          <li><a class="footer__link" href="#event">Get tickets</a></li>
+          <li><a class="footer__link" href="#contact">Suggest a speaker</a></li>
+          <li><a class="footer__link" href="#contact">Volunteer</a></li>
+          <li><a class="footer__link" href="#contact">Become a sponsor</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__column">
+        <h3 class="footer__title">Contact</h3>
+        <ul class="footer__list">
+          <li><a class="footer__link" href="#contact">hello@tedxki.com</a></li>
+          <li>Karolinska Institutet</li>
+          <li>Solna, Stockholm</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>This independent TEDx event is operated under license from TED.</p>
+      <p>&copy; <span data-year></span> TEDxKI</p>
+    </div>
+  </footer>
+</body>
+</html>
